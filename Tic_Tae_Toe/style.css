@@ -1,0 +1,78 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ height: 100vh;
+ background: linear-gradient(135deg, #080229, #1f114d);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.game{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 90vh;
+}
+.heading {
+ margin-top: 30px;
+ color: white;
+ font-size: 2.5rem;
+ margin-bottom: 50px;
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.box{
+ display: grid;
+ grid-template-columns: repeat(3,100px);
+ grid-template-rows: repeat(3,100px);
+ gap: 8px;
+}
+.cells{
+ width: 100px;
+ height: 100px;
+ background-color:#ffffff;
+ display: flex;
+ border-radius: 10px;
+ justify-content: center;
+ align-items: center;
+ font-size: 2.5rem;
+ font-weight: bold;
+ color: rgb(2, 8, 75);
+ cursor: pointer;
+ transition: background-color 0.2s, transform 0.2s;
+}
+.cells:hover{
+ background-color: #1ae04c;
+ transform: scale(1.05);
+}
+.footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 30px;
+}
+.status{
+ margin-top: 20px;
+ font-size: 1.2rem;
+}
+
+button{
+ margin-top: 15px;
+ padding: 10px 20px;
+ font-size: 1rem;
+ background-color: #00b894;
+ border: none;
+ color: white;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+button:hover{
+ background-color: #019875;
+}
