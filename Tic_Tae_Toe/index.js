@@ -12,16 +12,20 @@
    [2,5,8],
    [2,4,6],
    [3,4,5],
-   [6,6,8],
+   [6,7,8],
  ];
 boxes.forEach((box) =>{
  box.addEventListener("click",() =>{
     if(turn0){
      box.innerText = "O";
+     box.style.color = "blue";
+     box.style.textShadow = "0 0 10px #00f,0 0 20px #00f";
      turn0 = false;
     }
     else{
       box.innerText = "X";
+      box.style.color = "red";
+      box.style.textShadow = "0 0 10px #f00,0 0 20px #f00";
       turn0 = true;
     }
     box.disabled = true;
@@ -34,7 +38,7 @@ const checkWinner = () =>{
    let pos1 = boxes[pattern[0]].innerText;
    let pos2 = boxes[pattern[1]].innerText;
    let pos3 = boxes[pattern[2]].innerText;
-   if(pos1 != "" && pos1 === pos2 && pos2 === pos3){
+   if(pos1 != "" && pos1 === pos2 && pos2 === pos3 && pos1 === pos3){
     showWinner(pos1);
     disabledAllBoxes();
     return;
@@ -55,14 +59,19 @@ const disabledAllBoxes = () =>{
  });
 };
 const showWinner = (winner) => {
+  if(winner === "Draw"){
+    msg.innerText = `${winner}`;
+  }
+  else{
   msg.innerText = `Player ${winner} wins! 🎉`;
-  msgContainer.classList.remove("hide");
-  msgContainer.classList.add("show");
   confetti({
     particleCount: 150,
     spread: 100,
     origin: { y: 0.6 },
   });
+}
+  msgContainer.classList.remove("hide");
+  msgContainer.classList.add("show");
 }; 
 
 newGamebtn.addEventListener("click",() =>{

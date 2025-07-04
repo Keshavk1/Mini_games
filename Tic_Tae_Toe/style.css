@@ -3,6 +3,13 @@
  padding: 0;
  box-sizing: border-box;
 }
+.heading {
+ margin-top: 30px;
+ color: white;
+ font-size: 3rem;
+ margin-bottom: 50px;
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 .top-bar{
  position:absolute;
  top: 20px;
@@ -10,7 +17,6 @@
  z-index: 2;
 }
 body{
- height: 100vh;
  background: linear-gradient(135deg, #080229, #1f114d);
  display: flex;
  justify-content: center;
@@ -21,6 +27,30 @@ body{
 .newgame:hover{
  background-color: #00b894;
  transform: scale(1.3);
+}
+.players{
+ margin-top: 30px;
+ font-size: 2rem;
+ display: flex;
+ flex-direction: row;
+ gap: 200px;
+ color: white;
+}
+.playerO{
+ height: 75px;
+ width: 150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: blue;
+}
+.playerX{
+ height: 75px;
+ width: 150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #d63031;
 }
 .msg-container{
  position: absolute;
@@ -65,7 +95,18 @@ body{
  animation: glow 1s infinite alternate;
 }
 .container{
- height: inherit;
+ margin-top: 40px;
+ flex-direction:column;
+ align-items: center;
+ position: relative;
+}
+.win-line{
+ position: absolute;
+ height: 5px;
+ background: yellow;
+ z-index: 1;
+ display: none;
+ transform-origin: left center;
 }
 .game{
  height: 60vmin;
@@ -75,20 +116,13 @@ body{
  justify-content:center;
  align-items: center;
 }
-.heading {
- margin-top: 30px;
- color: white;
- font-size: 2.5rem;
- margin-bottom: 50px;
- text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
 .box{
  display: grid;
  border: none;
  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
- grid-template-columns: repeat(3,100px);
- grid-template-rows: repeat(3,100px);
- gap: 8px;
+ grid-template-columns: repeat(3,18vmin);
+ grid-template-rows: repeat(3,18vmin);
+ gap: 1px;
 }
 .end{
  margin: 0;

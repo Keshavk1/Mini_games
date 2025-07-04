@@ -10,6 +10,8 @@
   <body>
     <div class="top-bar">
       <button class ="reset-btn newgame">⟳</button>
+      <button class="status">Player X's turn</button>
+      
     </div>
     <div class="msg-container hide">
       <span class="close-btn" id="closebtn">&times;</span>
@@ -17,7 +19,12 @@
     </div>
     <main>
       <h1 class="heading">Tic Tae Toe</h1>
+      <div class="players">
+      <div class="playerO">Player O</div>
+      <div class="playerX">Player X</div>
+      </div>
       <div class="container">
+        <div class="win-line" id="winline"></div>
       <div class="game box">
         <button class="cells"></button>
         <button class="cells"></button>
@@ -30,8 +37,6 @@
         <button class="cells"></button>
       </div>
       <div class="end">
-      <button class="status">Player X's turn</button>
-      <button id ="reset-btn">Restart</button>
       </div>
       </div>
     </main>
