@@ -6,7 +6,6 @@ const resetSound = document.getElementById("reset-sound");
 let difficultyToggleBtn = document.getElementById("difficulty-toggle");
 let boxes = document.querySelectorAll(".cells");
 let resetbtn = document.querySelector("#reset-btn");
-let newGamebtn = document.querySelector(".newgame");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 let turn = document.querySelector(".status");
@@ -352,7 +351,7 @@ const showWinner = (winner) => {
     }
       if (winner === "O") {
         scoreO++;
-        scoreODisplay.innerText = scoreO;
+        scoreODisplay.innerText = Math.ceil(scoreO/2);
       } else if (winner === "X") {
         scoreX++;
         scoreXDisplay.innerText = scoreX;
@@ -416,6 +415,5 @@ const removepop = () => {
   msgContainer.classList.add("hide");
   msgContainer.classList.remove("show");
 };
-newGamebtn.addEventListener("click", resetBoard);
-closebtn.addEventListener("click", removepop);
+closebtn.addEventListener("click", resetBoard);
 resetbtn.addEventListener("click", resetGame);
