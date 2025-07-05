@@ -4,14 +4,16 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="gameimg.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>Tic Tae Toe</title>
   </head>
   <body>
     <div class="top-bar">
-      <button class ="reset-btn newgame">⟳</button>
-      <button class="status">Player X's turn</button>
-      
+      <button id="reset-btn">⟳</button>
+      <button class ="newgame">🎯 New Match</button>
+      <button id="mode-toggle">Play vs Computer</button>
+      <button id="difficulty-toggle">Easy</button>
     </div>
     <div class="msg-container hide">
       <span class="close-btn" id="closebtn">&times;</span>
@@ -20,11 +22,16 @@
     <main>
       <h1 class="heading">Tic Tae Toe</h1>
       <div class="players">
-      <div class="playerO">Player O</div>
-      <div class="playerX">Player X</div>
+      <div class="playerO glow">Player O</div>
+      <div class="playerX glow">Player X</div>
       </div>
       <div class="container">
+        <div class="status">playerO's turn</div>
         <div class="win-line" id="winline"></div>
+        <div class="scoreboard">
+          <div class="score playerOScore">Player O: <span id="o-score">0</span></div>
+          <div class="score playerXScore">Player X: <span id="x-score">0</span></div>
+        </div>
       <div class="game box">
         <button class="cells"></button>
         <button class="cells"></button>
@@ -40,6 +47,11 @@
       </div>
       </div>
     </main>
+    <audio id="click-sound" src="sounds/click.mp3"  type="audio/mpeg"></audio>
+    <audio id="invalid-sound" src="sounds/invalid.mp3"  type="audio/mpeg"></audio>
+    <audio id="win-sound" src="sounds/win.mp3"  type="audio/mpeg"></audio>
+    <audio id="draw-sound" src="sounds/draw.mp3"  type="audio/mpeg"></audio>
+    <audio id="reset-sound" src="sounds/reset.mp3"  type="audio/mpeg"></audio>
     <script src="index.js"></script>
   </body>
 </html>
