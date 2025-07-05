@@ -40,7 +40,7 @@ document.getElementById("mode-toggle").addEventListener("click", () => {
   resetGame();
   turn0 = true;
 });
-function playSound(sound, maxDuration = 500) {
+function playSound(sound, maxDuration = 3000) {
   // 500ms = 0.5 seconds
   try {
     sound.currentTime = 0;
@@ -344,7 +344,7 @@ const showWinner = (winner) => {
     msg.innerText = "It's a Draw";
     playSound(drawSound,300);
   } else {
-   playSound(winSound,500);
+   playSound(winSound,3000);
     if (winner === "X" && vsComputer) {
       msg.innerText = `Computer wins! 🎉 `;
     } else {
