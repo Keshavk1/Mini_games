@@ -23,6 +23,13 @@ let difficulty = "easy";
 difficultyToggleBtn.addEventListener("click", () => {
   if (!vsComputer) return;
   difficulty = difficulty === "easy" ? "hard" : "easy";
+  if(difficulty === "easy"){
+    difficultyToggleBtn.style.background = "green";
+  }
+  else if(difficulty !== "easy"){
+    difficultyToggleBtn.style.background =
+      "linear-gradient(135deg,rgb(230, 0, 0),rgb(180, 10, 16))";
+  }
   difficultyToggleBtn.innerText = `${
     difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
   }`;
@@ -33,8 +40,8 @@ document.getElementById("mode-toggle").addEventListener("click", () => {
   vsComputer = !vsComputer;
   difficultyToggleBtn.style.display = vsComputer ? "inline-block" : "none";
   document.getElementById("mode-toggle").innerText = vsComputer
-    ? "Play vs Player"
-    : "Play vs Computer";
+    ? "1 VS 1"
+    :  "VS AI";
   playerX.innerText = vsComputer ? "Computer" : "Player X";
   resetGame();
   turn0 = true;
