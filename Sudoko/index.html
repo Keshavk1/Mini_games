@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sudoko Solver</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Sudoko Solver</h1>
+    </header>
+    <main>
+      <div class="s-container">
+        <div class="menu-bar">
+          <button class="side-bar newgame">Newgame</button>
+          <button class="side-bar reset-btn">⟳</button>
+          <button class="side-bar solution">Solve</button>
+          <button class="side-bar hint-btn">?</button>
+          <button class="side-bar undo">↵</button>
+          <div class="timer-container">
+            <span class="timer-display">00:00</span>
+            <button class="timer-control pause">⏸</button>
+            <button class="timer-control play hidden">▶</button>
+          </div>
+          <div id="pops">
+          <button class="popup"></button>
+          </div>
+        </div>
+        <div class="game box" id="s-grid"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
