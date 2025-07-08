@@ -64,7 +64,7 @@ Enjoy a visually enhanced classic game with:
 
 You can include these images (rename if needed):
 - `sudoku-screenshot.png` → ![Sudoku Screenshot](./Sudoku/screenshot.png)
-- `tictactoe-screenshot.png` → ![Tic Tac Toe Screenshot](./Tic_tae_Toe/screenshot.png)
+- `tictactoe-screenshot.png` → ![Tic Tac Toe Screenshot](./Tic_Tae_Toe/screenshot.png)
 
 ---
 
