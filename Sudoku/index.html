@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1 class="heading">Sudoko Solver</h1>
+      <h1 class="heading">Sudoku Solver</h1>
     </header>
     <main>
       <div class="s-container">
@@ -28,7 +28,13 @@
           <button class="popup"></button>
           </div>
         </div>
-        <div class="game box" id="s-grid"></div>
+        <div class="box">
+        <div class="pattern">Enter your Sudoku puzzle in the box below. 
+          Use numbers 1-9 for known values and 0 or . for empty cells. 
+          You can input either 81 characters in one line or 9 lines of 9 characters each.
+        <button class="ask">Give puzzle</button></div>
+        <div class="game" id="s-grid"></div>
+        </div>
       </div>
     </main>
     <footer></footer>
