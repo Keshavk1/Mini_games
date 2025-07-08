@@ -13,7 +13,7 @@ Welcome to **Mini Games**, a collection of interactive browser-based games built
 ## 📌 Games Included
 
 ### 1. 🧠 Sudoku Solver
-![Sudoku Screenshot](./sudoku-screenshot.png)
+![Sudoku Screenshot](./Sudoku-screenshot.png)
 
 Solve any valid Sudoku puzzle instantly. This game features:
 - Clean and modern UI with dark theme styling
@@ -23,7 +23,7 @@ Solve any valid Sudoku puzzle instantly. This game features:
 - New puzzle generator & reset options
 
 ### 2. ❌⭕ Tic Tac Toe
-![Tic Tac Toe Screenshot](./tictactoe-screenshot.png)
+![Tic Tac Toe Screenshot](./Tic_tae_Toe-screenshot.png)
 
 Enjoy a visually enhanced classic game with:
 - 1v1 and Player vs Computer modes
@@ -60,8 +60,8 @@ Enjoy a visually enhanced classic game with:
 ## 📸 Screenshots
 
 You can include these images (rename if needed):
-- `sudoku-screenshot.png` → ![Sudoku Screenshot](./sudoku-screenshot.png)
-- `tictactoe-screenshot.png` → ![Tic Tac Toe Screenshot](./tictactoe-screenshot.png)
+- `sudoku-screenshot.png` → ![Sudoku Screenshot](./Sudoku-screenshot.png)
+- `tictactoe-screenshot.png` → ![Tic Tac Toe Screenshot](./Tic_tae_Toe-screenshot.png)
 
 ---
 
