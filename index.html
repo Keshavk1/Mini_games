@@ -1,17 +1,83 @@
-<!-- MINI-games/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Games by Keshav</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <title>Mini Games by Keshav</title> 
 </head>
-<body style="font-family:sans-serif;text-align:center;padding:50px;">
-  <h1>🎮 Mini Games by Keshav</h1>
-  <p>Explore my mini JavaScript games:</p>
-  <ul style="list-style:none;">
-    <li><a href="./Tic_Tae_Toe/index.html">🧠 Tic Tac Toe</a></li>
-    <li><a href="./Sudoku/index.html">Sudoku Solver</a></li>
-  </ul>
+<body>
+  <!-- Animated Bubbles Background -->
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>🎮 Mini Games Hub</h1>
+      <p class="subtitle">Explore my collection of interactive JavaScript games</p>
+    </header>
+
+    <div class="games-grid">
+      <!-- Tic Tac Toe Card -->
+      <div class="game-card">
+        <div class="game-image">
+          <img src="./Tic_Tae_Toe/screenshot.png" alt="Tic Tac Toe">
+        </div>
+        <div class="game-content">
+          <h3 class="game-title">🧠 Tic Tac Toe</h3>
+          <p class="game-description">
+            The classic strategy game where you try to get three in a row. Play against the computer with different difficulty levels. 
+            Features score tracking and animated moves.
+          </p>
+          <a href="./Tic_Tae_Toe/index.html" class="play-btn">Play Now</a>
+        </div>
+      </div>
+
+      <!-- Sudoku Card -->
+      <div class="game-card">
+        <div class="game-image">
+          <img src="./Sudoku/screenshot.png" alt="Sudoku">
+        </div>
+        <div class="game-content">
+          <h3 class="game-title">🔢 Sudoku Solver</h3>
+          <p class="game-description">
+            Challenge your logic with this number puzzle game. Enter your puzzle and let the solver find the solution, 
+            or play interactively with hints and error checking.
+          </p>
+          <a href="./Sudoku/index.html" class="play-btn">Solve Puzzle</a>
+        </div>
+      </div>
+
+      <!-- Rock Paper Scissors Card -->
+      <div class="game-card">
+        <div class="game-image">
+          <img src="./RPS/game.png" alt="Rock Paper Scissors">
+        </div>
+        <div class="game-content">
+          <h3 class="game-title">✊✋✌️ Rock Paper Scissors</h3>
+          <p class="game-description">
+            The timeless hand game with a modern twist. Play against the computer with animated gestures, 
+            score tracking, and special "extreme" mode with additional options.
+          </p>
+          <a href="./RPS/RPS.html" class="play-btn">Challenge AI</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created with ❤️ by Keshav | &copy; 2025 Mini Games Collection</p>
+      <p>All games built with vanilla JavaScript, HTML5 and CSS3</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -36,6 +36,11 @@ Enjoy a visually enhanced classic game with:
 - Sound effects on win, draw, and moves
 - Fully responsive layout for desktop and mobile
 
+### 3. ✊✋✌️ Rock Paper Scissors
+![Rock Paper Scissors](./RPS/game.png)
+    -The timeless hand game with a modern twist. 
+    -Play against the computer with animated gestures. 
+    -Score tracking, and special "extreme" mode with additional options.
 ---
 
 ## 🛠️ Tech Stack
@@ -65,6 +70,7 @@ Enjoy a visually enhanced classic game with:
 You can include these images (rename if needed):
 - `sudoku-screenshot.png` → ![Sudoku Screenshot](./Sudoku/screenshot.png)
 - `tictactoe-screenshot.png` → ![Tic Tac Toe Screenshot](./Tic_Tae_Toe/screenshot.png)
+-![Rock Paper Scissors](./RPS/game.png)
 
 ---
 
@@ -78,27 +84,7 @@ You can include these images (rename if needed):
 
 ---
 
-## 📁 Folder Structure
 
-```
-Mini_games/
-├── index.html
-├── style.css
-├── script.js
-├── tictactoe/
-│   ├── tictactoe.html
-│   ├── tictactoe.css
-│   └── tictactoe.js
-├── sudoku/
-│   ├── sudoku.html
-│   ├── sudoku.css
-│   └── sudoku.js
-└── assets/
-    └── sounds/
-        ├── win.mp3
-        ├── draw.mp3
-        └── click.mp3
-```
 
 ---
 

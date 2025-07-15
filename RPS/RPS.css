@@ -1,0 +1,87 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ width: 100%;
+ height: 100vh;
+ background: linear-gradient(135deg, #080229, #1f114d);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#heading {
+ text-align: center;
+ font-size: 2rem;
+ font-weight: bold;
+ color: #7e4afc;
+ margin-top: 20px;
+}
+
+.symbols {
+ margin: 20px;
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 35px;
+ cursor: pointer;
+}
+
+#rock,
+#paper,
+#scissor {
+ border-radius: 50%;
+ font-size: 5rem;
+ background-color: #7e4afc;
+ color: white;
+ padding: 10px;
+ cursor: pointer;
+ transition: transform 0.3s ease;
+ text-shadow: 0 0 10px plum;
+}
+
+#rock:hover,
+#paper:hover,
+#scissor:hover {
+ transform: scale(1.1);
+}
+
+.scoreboard {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 100px;
+ margin-top: 30px;
+ text-align: center;
+}
+
+.playerscore{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7e4afc;
+ 
+}
+.computerscore{
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: #7e4afc;
+
+}
+
+.result {
+ margin-top: 20px;
+ width: 300px;
+ height: 50px;
+ font-size: 1.5rem;
+ color: #7e4afc;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 15px;
+ background-color: #f9f1ff;
+
+ position: absolute;
+ top: 50%;
+ left: 41%;
+}
